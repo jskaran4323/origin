@@ -42,14 +42,21 @@ public class AppTest
 
     public void testPushandPop()
     {
-      MyStack<Integer> s=new MyStack<>();
-      s.push(1);
-      s.push(2);
-      assertEquals(Integer.valueOf(2),s.pop());
-      assertEquals(Integer.valueOf(1),s.pop());
+      MyStack<Integer> stackOne=new MyStack<>();
+      stackOne.push(1);
+      stackOne.push(2);
+      stackOne.push(3);
+      stackOne.push(5);
+
+      assertEquals(Integer.valueOf(5),stackOne.pop());
+      assertEquals(Integer.valueOf(3),stackOne.pop());
+
+        assertEquals(Integer.valueOf(2),stackOne.pop());
+        assertEquals(Integer.valueOf(1),stackOne.pop());
+
     }
     public void testisEmpty(){
-    MyStack<Integer> stack=new MyStack<>();
-    assertEquals(true,stack.isEmpty());
+    MyStack<Integer> stackTwo=new MyStack<>();
+    assertEquals(true,stackTwo.isEmpty());
     }
 }
