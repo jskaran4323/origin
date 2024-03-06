@@ -48,7 +48,8 @@ public class AppTest
       assertEquals(Integer.valueOf(2),s.pop());
       assertEquals(Integer.valueOf(1),s.pop());
     }
-    public void testPop(){
-
+    public void testisEmpty(){
+    MyStack<Integer> stack=new MyStack<>();
+    assertEquals(true,stack.isEmpty());
     }
 }
