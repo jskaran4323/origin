@@ -59,4 +59,8 @@ public class AppTest
     MyStack<Integer> stackTwo=new MyStack<>();
     assertEquals(true,stackTwo.isEmpty());
     }
+    public void testSize(){
+        MyStack<Integer> stackThree=new MyStack<>();
+        assertEquals(0,stackThree.size());
+    }
 }
