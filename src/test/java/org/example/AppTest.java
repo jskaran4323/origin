@@ -46,9 +46,9 @@ public class AppTest
       stackOne.push(1);
       stackOne.push(2);
       stackOne.push(3);
-      stackOne.push(5);
+      stackOne.push(4);
 
-      assertEquals(Integer.valueOf(5),stackOne.pop());
+      assertEquals(Integer.valueOf(4),stackOne.pop());
       assertEquals(Integer.valueOf(3),stackOne.pop());
 
         assertEquals(Integer.valueOf(2),stackOne.pop());
